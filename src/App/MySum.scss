@@ -1,0 +1,31 @@
+.MySum {
+    margin: auto;
+    text-align: center;
+    .numbers {
+        display: flex;
+        justify-content: center;
+    }
+    .singleNumber {
+        cursor: pointer;
+        margin: 0.8em;
+        padding: 0.5em;
+        &.selected {
+            border: 1px solid red;
+            border-radius: 100%;
+        }
+    }
+    .total {
+        padding-top: 2em;
+    }
+    .button {
+        cursor: pointer;
+        &:hover {
+            background-color: cyan;
+        }
+        &.delete {
+            &:hover {
+                background-color: red;
+            }
+        }
+    }
+}
